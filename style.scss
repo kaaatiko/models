@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 50px;
+    font-family: 'Inter';
+    color: white;
+}
+
+
+.hero__container {
+    background-image: url('../image/fashion.png');
+    background-repeat: no-repeat;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1360px;
+    margin: 0 auto;
+    padding-bottom: 180px;
+
+    &__logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    &__language {
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    &__language::after {
+        content: "";
+        display: block;
+        width: 8px;
+        height: 8px;
+        background-image: url('../image/mini-arrow.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        transform: translate(100%, -50%);
+    }
+
+    &__navi {
+        display: flex;
+        gap: 40px;
+    }
+
+    &__navi-link {
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    &__navi-link:hover {
+        text-decoration: underline;
+    }
+
+    &__sound {
+        font-size: 14px;
+        font-weight: 400;
+        position: relative;
+    }
+
+    &__sound::before {
+        content: "";
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        background-image: url('../image/mini-arrow.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        // position: absolute;
+        // top: 0;
+        // left: 0;
+        transform: rotate(-90deg);
+    }
+}
+
+.hero {
+    max-width: 1360px;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 30px;
+    // padding-top: 20px;
+
+    &__accent {
+        display: grid;
+        grid-template-columns: 233px auto;
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas: 
+            "up up link"
+            "date down link";
+        justify-items: start;
+        align-items: end;
+        padding-bottom: 200px;
+    }
+
+    &__title-up {
+        grid-area: up;
+        font-size: 140px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+
+    &__title-down {
+        grid-area: down;
+        font-size: 140px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+
+    &__date {
+        grid-area: date;
+    }
+
+    &__link {
+        grid-area: link;
+        text-decoration: none;
+        color: white;
+        justify-self: end;
+        align-self: center;
+    }
+
+    &__link-cover {
+        width: 139px;
+        height: 139px;
+        border: 1px solid white;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__link-cover:hover {
+        backdrop-filter: blur(7px);
+    }
+
+    &__link-text {
+        max-width: 94px;
+        text-align: center;
+        font-size: 15px;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__about-company {
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    &__social-media {
+        list-style-type: none;
+        display: flex;
+        gap: 50px;
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    &__social-media-item {
+
+    }
+
+    &__social-media-item-link {
+        text-decoration: none;
+        color: white;
+    }
+
+    &__social-media-item-link:hover {
+        opacity: .5;
+    }
+}
+
+.news {
+    color: black;
+    max-width: 1360px;
+    margin: 0 auto;
+    padding-top: 140px;
+    overflow: hidden;
+
+    &__title {
+        font-size: 32px;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+
+    &__cards {
+        padding-top: 30px;
+        display: flex;
+        gap: 30px;
+        border-top: 1px solid rgb(217, 217, 217);
+    }
+
+    &__card {
+    }
+}
+.card {
+
+    &__date {
+        color: #4B4B4B;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    &__image-big {
+        margin-bottom: 15px;
+    }
+
+    &__image-small {
+        margin-bottom: 15px;
+    }
+
+    &__model-name {
+        text-transform: uppercase;
+        font-size: 22px;
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+
+    &__magazine {
+        text-transform: uppercase;
+        color: #4B4B4B;
+        font-size: 18px;
+        font-weight: 400;
+    }
+}
+
+
