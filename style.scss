@@ -7,7 +7,7 @@
 body {
     padding-top: 50px;
     font-family: 'Inter';
-    color: white;
+    color: black;
 }
 
 
@@ -25,6 +25,7 @@ body {
     max-width: 1360px;
     margin: 0 auto;
     padding-bottom: 180px;
+    color: white;
 
     &__logo {
         width: 50px;
@@ -89,6 +90,7 @@ body {
     margin: 0 auto;
     position: relative;
     padding-bottom: 30px;
+    color: white;
     // padding-top: 20px;
 
     &__accent {
@@ -143,6 +145,16 @@ body {
         backdrop-filter: blur(7px);
     }
 
+    &__link-cover_xs {
+        width: 139px;
+        height: 139px;
+        border: 1px solid white;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     &__link-text {
         max-width: 94px;
         text-align: center;
@@ -185,7 +197,6 @@ body {
 }
 
 .news {
-    color: black;
     max-width: 1360px;
     margin: 0 auto;
     padding-top: 140px;
@@ -237,5 +248,182 @@ body {
         font-weight: 400;
     }
 }
+
+
+.newbies {
+    padding-top: 140px;
+    max-width: 1360px;
+    margin: 0 auto;
+
+    &__title {
+        font-size: 32px;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+}
+
+.modelcard {
+    padding: 30px 0;
+    display: flex;
+    gap: 30px;
+    border-top: 1px solid rgb(217, 217, 217);
+    max-width: 1360px;
+    margin: 0 auto;
+    // justify-content: space-between;
+    position: relative;
+
+    &__main-image {
+        max-height: 686px;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    &__image-big {
+        max-height: 548px;
+        max-width: 459px;
+    }
+
+    &__image-medium {
+        max-height: 355px;
+        max-width: 281px;
+
+        &_down {
+            align-self: flex-end;
+        }
+    }
+
+    &__image-small {
+        max-height: 269px;
+        max-width: 213px;
+
+        &_fixed {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }       
+    }
+
+    &__link {
+        text-decoration: none;
+
+        &_right {
+            align-self: flex-end;
+        }
+    }
+
+
+    &__link-cover {
+        width: 150px;
+        height: 150px;
+        border: 1px solid #D1D1D1;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &_xs {
+            width: 59px;
+            height: 59px;
+            position: absolute;
+            top: 110%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    &__link-text {
+        max-width: 94px;
+        text-align: center;
+        font-size: 15px;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: black;
+    }
+
+    &__link-show-all {
+        text-decoration: none;        
+    }
+
+    &__img-arrow {
+
+    }
+}
+
+
+
+.modelcard:last-of-type {
+    border-bottom: 1px solid rgb(217, 217, 217);
+}
+
+.info {
+
+    &__name {
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+
+    &__description {
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 15px;
+        max-width: 420px;
+        color: #4B4B4B;
+    }
+
+    &__instagram-cover {
+        width: 42px;
+        height: 42px;
+        border: 1px solid #D1D1D1;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__logo-instagram {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.superstars {
+    text-align: center;
+    padding-top: 110px;
+    padding-bottom: 140px;
+    max-width: 1360px;
+    margin: 0 auto;
+
+
+    &__title {
+        font-size: 370px;
+        text-transform: uppercase;
+        overflow: hidden;
+        position: relative;
+        color: rgba(245, 245, 245, 1);
+        // transform: translateX(-205px);
+    }
+
+    &__title::before {
+        content: "SuperStars";
+        text-transform: uppercase;
+        color: black;
+        font-size: 156px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+}
+
+
+
 
 

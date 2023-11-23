@@ -8,7 +8,7 @@
 body {
   padding-top: 50px;
   font-family: 'Inter';
-  color: white;
+  color: black;
 }
 
 .hero__container {
@@ -31,6 +31,7 @@ body {
   max-width: 1360px;
   margin: 0 auto;
   padding-bottom: 180px;
+  color: white;
 }
 
 .header__logo {
@@ -98,6 +99,7 @@ body {
   margin: 0 auto;
   position: relative;
   padding-bottom: 30px;
+  color: white;
 }
 
 .hero__accent {
@@ -175,6 +177,22 @@ body {
           backdrop-filter: blur(7px);
 }
 
+.hero__link-cover_xs {
+  width: 139px;
+  height: 139px;
+  border: 1px solid white;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .hero__link-text {
   max-width: 94px;
   text-align: center;
@@ -217,7 +235,6 @@ body {
 }
 
 .news {
-  color: black;
   max-width: 1360px;
   margin: 0 auto;
   padding-top: 140px;
@@ -265,4 +282,190 @@ body {
   color: #4B4B4B;
   font-size: 18px;
   font-weight: 400;
+}
+
+.newbies {
+  padding-top: 140px;
+  max-width: 1360px;
+  margin: 0 auto;
+}
+
+.newbies__title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.modelcard {
+  padding: 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  border-top: 1px solid #d9d9d9;
+  max-width: 1360px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.modelcard__main-image {
+  max-height: 686px;
+}
+
+.modelcard__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.modelcard__image-big {
+  max-height: 548px;
+  max-width: 459px;
+}
+
+.modelcard__image-medium {
+  max-height: 355px;
+  max-width: 281px;
+}
+
+.modelcard__image-medium_down {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.modelcard__image-small {
+  max-height: 269px;
+  max-width: 213px;
+}
+
+.modelcard__image-small_fixed {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.modelcard__link {
+  text-decoration: none;
+}
+
+.modelcard__link_right {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.modelcard__link-cover {
+  width: 150px;
+  height: 150px;
+  border: 1px solid #D1D1D1;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modelcard__link-cover_xs {
+  width: 59px;
+  height: 59px;
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.modelcard__link-text {
+  max-width: 94px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: black;
+}
+
+.modelcard__link-show-all {
+  text-decoration: none;
+}
+
+.modelcard:last-of-type {
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.info__name {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.info__description {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 15px;
+  max-width: 420px;
+  color: #4B4B4B;
+}
+
+.info__instagram-cover {
+  width: 42px;
+  height: 42px;
+  border: 1px solid #D1D1D1;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.info__logo-instagram {
+  width: 24px;
+  height: 24px;
+}
+
+.superstars {
+  text-align: center;
+  padding-top: 110px;
+  padding-bottom: 140px;
+  max-width: 1360px;
+  margin: 0 auto;
+}
+
+.superstars__title {
+  font-size: 370px;
+  text-transform: uppercase;
+  overflow: hidden;
+  position: relative;
+  color: whitesmoke;
+}
+
+.superstars__title::before {
+  content: "SuperStars";
+  text-transform: uppercase;
+  color: black;
+  font-size: 156px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
