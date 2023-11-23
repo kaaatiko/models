@@ -6,16 +6,17 @@
 }
 
 body {
-  padding-top: 50px;
-  font-family: 'Inter';
+  font-family: "Inter";
   color: black;
 }
 
-.hero__container {
-  background-image: url("../image/fashion.png");
-  background-repeat: no-repeat;
-  max-width: 1440px;
+.container {
+  max-width: 1360px;
   margin: 0 auto;
+}
+
+.hero__container {
+  background: url("../image/fashion.png") center/cover no-repeat;
 }
 
 .header {
@@ -30,20 +31,18 @@ body {
           align-items: center;
   max-width: 1360px;
   margin: 0 auto;
+  padding-top: 20px;
   padding-bottom: 180px;
   color: white;
 }
-
 .header__logo {
   width: 50px;
   height: 50px;
 }
-
 .header__language {
   font-size: 15px;
   font-weight: 500;
 }
-
 .header__language::after {
   content: "";
   display: block;
@@ -56,31 +55,26 @@ body {
       -ms-transform: translate(100%, -50%);
           transform: translate(100%, -50%);
 }
-
 .header__navi {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 40px;
 }
-
 .header__navi-link {
   text-decoration: none;
   color: white;
   font-size: 15px;
   font-weight: 400;
 }
-
 .header__navi-link:hover {
   text-decoration: underline;
 }
-
 .header__sound {
   font-size: 14px;
   font-weight: 400;
   position: relative;
 }
-
 .header__sound::before {
   content: "";
   display: inline-block;
@@ -101,61 +95,39 @@ body {
   padding-bottom: 30px;
   color: white;
 }
-
 .hero__accent {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 233px auto;
-      grid-template-columns: 233px auto;
-  -ms-grid-rows: (auto)[2];
-      grid-template-rows: repeat(2, auto);
-      grid-template-areas: "up up link" "date down link";
+  grid-template-columns: 233px auto;
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas: "up up link" "date down link";
   justify-items: start;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: end;
   padding-bottom: 200px;
 }
-
 .hero__title-up {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
   grid-area: up;
   font-size: 140px;
   font-weight: 400;
   text-transform: uppercase;
 }
-
 .hero__title-down {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
   grid-area: down;
   font-size: 140px;
   font-weight: 400;
   text-transform: uppercase;
 }
-
 .hero__date {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
   grid-area: date;
 }
-
 .hero__link {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 3;
   grid-area: link;
   text-decoration: none;
   color: white;
-  -ms-grid-column-align: end;
-      justify-self: end;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  justify-self: end;
+  align-self: center;
 }
-
 .hero__link-cover {
   width: 139px;
   height: 139px;
@@ -171,12 +143,10 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
-
 .hero__link-cover:hover {
   -webkit-backdrop-filter: blur(7px);
           backdrop-filter: blur(7px);
 }
-
 .hero__link-cover_xs {
   width: 139px;
   height: 139px;
@@ -192,7 +162,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
-
 .hero__link-text {
   max-width: 94px;
   text-align: center;
@@ -200,7 +169,6 @@ body {
   font-weight: 500;
   text-transform: uppercase;
 }
-
 .hero__info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -209,12 +177,10 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-
 .hero__about-company {
   font-size: 15px;
   font-weight: 400;
 }
-
 .hero__social-media {
   list-style-type: none;
   display: -webkit-box;
@@ -224,14 +190,12 @@ body {
   font-size: 15px;
   font-weight: 400;
 }
-
 .hero__social-media-item-link {
   text-decoration: none;
   color: white;
 }
-
 .hero__social-media-item-link:hover {
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .news {
@@ -240,46 +204,39 @@ body {
   padding-top: 140px;
   overflow: hidden;
 }
-
 .news__title {
   font-size: 32px;
   font-weight: 700;
   margin-bottom: 30px;
 }
-
 .news__cards {
   padding-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
-  border-top: 1px solid #d9d9d9;
+  border-top: 1px solid rgb(217, 217, 217);
 }
-
 .card__date {
-  color: #4B4B4B;
+  color: #4b4b4b;
   font-size: 16px;
   margin-bottom: 10px;
 }
-
 .card__image-big {
   margin-bottom: 15px;
 }
-
 .card__image-small {
   margin-bottom: 15px;
 }
-
 .card__model-name {
   text-transform: uppercase;
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
 }
-
 .card__magazine {
   text-transform: uppercase;
-  color: #4B4B4B;
+  color: #4b4b4b;
   font-size: 18px;
   font-weight: 400;
 }
@@ -289,7 +246,6 @@ body {
   max-width: 1360px;
   margin: 0 auto;
 }
-
 .newbies__title {
   font-size: 32px;
   font-weight: 700;
@@ -302,17 +258,16 @@ body {
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
-  border-top: 1px solid #d9d9d9;
-  max-width: 1360px;
-  margin: 0 auto;
+  border-top: 1px solid rgb(217, 217, 217);
   position: relative;
 }
-
 .modelcard__main-image {
   max-height: 686px;
 }
-
 .modelcard__container {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -325,47 +280,39 @@ body {
           justify-content: space-between;
   position: relative;
 }
-
 .modelcard__image-big {
   max-height: 548px;
   max-width: 459px;
 }
-
 .modelcard__image-medium {
   max-height: 355px;
   max-width: 281px;
 }
-
 .modelcard__image-medium_down {
   -ms-flex-item-align: end;
       align-self: flex-end;
 }
-
 .modelcard__image-small {
   max-height: 269px;
   max-width: 213px;
 }
-
 .modelcard__image-small_fixed {
   position: absolute;
   bottom: 0;
   right: 0;
 }
-
 .modelcard__link {
   text-decoration: none;
 }
-
 .modelcard__link_right {
   -ms-flex-item-align: end;
       align-self: flex-end;
 }
-
 .modelcard__link-cover {
   width: 150px;
   height: 150px;
-  border: 1px solid #D1D1D1;
-  border-radius: 100%;
+  border: 1px solid #d1d1d1;
+  border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -376,18 +323,10 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
-
 .modelcard__link-cover_xs {
   width: 59px;
   height: 59px;
-  position: absolute;
-  top: 110%;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
 }
-
 .modelcard__link-text {
   max-width: 94px;
   text-align: center;
@@ -396,13 +335,16 @@ body {
   text-transform: uppercase;
   color: black;
 }
-
 .modelcard__link-show-all {
   text-decoration: none;
 }
+.w100 {
+  width: 100%;
+  max-width: 100%;
+}
 
 .modelcard:last-of-type {
-  border-bottom: 1px solid #d9d9d9;
+  border-bottom: 1px solid rgb(217, 217, 217);
 }
 
 .info__name {
@@ -411,19 +353,22 @@ body {
   font-weight: 600;
   margin-bottom: 15px;
 }
-
 .info__description {
   font-size: 14px;
   font-weight: 400;
   margin-bottom: 15px;
   max-width: 420px;
-  color: #4B4B4B;
+  color: #4b4b4b;
 }
-
+.info__instagram {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
 .info__instagram-cover {
   width: 42px;
   height: 42px;
-  border: 1px solid #D1D1D1;
+  border: 1px solid #d1d1d1;
   border-radius: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -435,10 +380,12 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
-
 .info__logo-instagram {
   width: 24px;
   height: 24px;
+}
+.info__logo-instagram_red {
+  background-color: red;
 }
 
 .superstars {
@@ -448,24 +395,36 @@ body {
   max-width: 1360px;
   margin: 0 auto;
 }
-
 .superstars__title {
-  font-size: 370px;
-  text-transform: uppercase;
-  overflow: hidden;
-  position: relative;
-  color: whitesmoke;
-}
-
-.superstars__title::before {
-  content: "SuperStars";
   text-transform: uppercase;
   color: black;
+  position: relative;
   font-size: 156px;
+}
+.superstars__title::before {
+  content: "Celebrity";
+  font-size: 370px;
+  text-transform: uppercase;
+  color: rgb(245, 245, 245);
+  z-index: -1;
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+.next {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.next__img {
+  padding: 20px;
+  border: 1px solid #000;
+  border-radius: 50%;
 }
